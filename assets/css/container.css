@@ -1,0 +1,15 @@
+/* CONTAINER PRINCIPAL */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* RESPONSIVO */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  }
+  

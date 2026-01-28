@@ -1,0 +1,43 @@
+/* SEÇÃO DE FILTROS */
+.secao-filtros {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* BOTÃO DE FILTRO */
+.botao-filtro {
+  padding: 8px 14px;
+  background-color: white;
+  color: #666;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.botao-filtro:hover {
+  border-color: #6366f1;
+  color: #6366f1;
+}
+
+/* BOTÃO ATIVO */
+.botao-filtro.ativo {
+  background-color: #6366f1;
+  color: white;
+  border-color: #6366f1;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .secao-filtros {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 5px 0;
+  }
+}

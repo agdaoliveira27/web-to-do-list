@@ -1,0 +1,45 @@
+/* CABEÇALHO */
+.cabecalho {
+  background-color: #6366f1;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.cabecalho i {
+  margin-right: 8px;
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* RODAPÉ */
+.rodape {
+  background-color: #6366f1;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .cabecalho h1 {
+    font-size: 22px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}

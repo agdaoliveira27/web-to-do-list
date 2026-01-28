@@ -1,0 +1,75 @@
+/* SEÇÃO DO FORMULÁRIO */
+.secao-formulario {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.secao-formulario h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* FORMULÁRIO */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* CAMPOS DE ENTRADA */
+.campo-entrada {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s;
+}
+
+.campo-entrada:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.2);
+}
+
+/* BOTÃO ADICIONAR */
+.botao-adicionar {
+  padding: 12px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.botao-adicionar:hover {
+  background-color: #4f46e5;
+}
+
+.botao-adicionar:active {
+  background-color: #4338ca;
+}
+
+.botao-adicionar i {
+  margin-right: 6px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .secao-formulario {
+    padding: 15px;
+  }
+
+  .formulario {
+    gap: 10px;
+  }
+}
