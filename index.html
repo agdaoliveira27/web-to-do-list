@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minhas Tarefas</title>
+  
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+</head>
+<body>
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+    <h1><i class="fas fa-tasks"></i> Minhas Tarefas</h1>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container">
+    
+    <!-- SEÇÃO DE FORMULÁRIO -->
+    <section class="secao-formulario">
+      <h2>Adicionar Tarefa</h2>
+      <form id="formularioTarefa" class="formulario">
+        <input 
+          type="text" 
+          id="inputTitulo" 
+          class="campo-entrada"
+          placeholder="O que você quer fazer?"
+          required
+        >
+        <textarea 
+          id="inputDescricao" 
+          class="campo-entrada"
+          placeholder="Detalhes da tarefa (opcional)"
+          rows="2"
+        ></textarea>
+        <button type="submit" class="botao-adicionar">
+          <i class="fas fa-plus"></i> Adicionar
+        </button>
+      </form>
+    </section>
+
+    <!-- SEÇÃO DE FILTROS -->
+    <section class="secao-filtros">
+      <button class="botao-filtro ativo" data-filtro="todas">Todas</button>
+      <button class="botao-filtro" data-filtro="a fazer">A Fazer</button>
+      <button class="botao-filtro" data-filtro="em andamento">Em andamento</button>
+      <button class="botao-filtro" data-filtro="concluída">Concluídas</button>
+    </section>
+
+    <!-- SEÇÃO DE TAREFAS - TABELA -->
+    <section class="secao-tarefas">
+      <table class="tabela-tarefas">
+        <thead>
+          <tr>
+            <th>Tarefa</th>
+            <th>Status</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="corpoDaTabelaTarefas">
+          <tr class="linha-vazia">
+            <td colspan="3" class="mensagem-vazia">Carregando tarefas...</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <p>&copy; 2026 App de Tarefas</p>
+  </footer>
+
+</body>
+</html>

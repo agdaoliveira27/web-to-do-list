@@ -1,0 +1,36 @@
+/* RESETAR ESTILOS PADRÃO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONTE E CORES GERAIS */
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* O CONTEÚDO PRINCIPAL CRESCE E EMPURRA O FOOTER */
+main {
+  flex: 1;
+}
+
+/* REMOVER LINHA DOS LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* REMOVER ESTILO DAS LISTAS */
+ul, ol {
+  list-style: none;
+}
